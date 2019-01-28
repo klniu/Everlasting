@@ -1,4 +1,4 @@
-# 数据源配置
+###################  数据源配置  ###################
 spring:
   datasource:
     type: com.alibaba.druid.pool.DruidDataSource
@@ -47,7 +47,10 @@ spring:
         wall:
           config:
             multi-statement-allow: true
-# 日志配置
+###################  mybatis-plus配置  ###################
+mybatis-plus:
+  mapper-locations: classpath*:com/xncoding/pos/common/dao/repository/mapping/*.xml
+###################  日志配置  ###################
 logging:
   level:
     com.everlasting: debug
